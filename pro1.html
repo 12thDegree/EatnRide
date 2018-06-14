@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/CSS/APImain.css">
+    <title>Eat & Ride</title>
+</head>
+
+<body>
+    <!-- WARNING:  <!important> tag is used in CSS -->
+    <!--1 card for all! keep your div's organized around the food as one capsule, and the  -->
+    <!-- EDAMAME API -->
+    <div class="card form-page" style="width: 25rem;">
+        <h2 class="card-title">Eat and Burn!</h2>
+        <img class="card-img-top" src="./assets/Images/Foods-header-602x220.jpg" alt="Foods Banner">
+        <div class="card-body">
+            <p class="card-text">You're in luck, answer a few questions
+            <br>for a tasty meal and a fun ride.</p>
+        </div>
+        <form>
+            <!-- Form input for Edamame API they have to offer something-->
+            <label for="EdamameGroupInput">What'cha feelin?</label>
+            <input type="text" class="form-control" id="foodQuery" placeholder="like - 'chicken & rice' or 'omlette'">
+            <!-- radio button row -- health input for edamame API -->
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="RadioVegan" value="vegan">
+                <label class="form-check-label" for="inlineRadio1">Vegan-vore</label>
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="RadioVeggie" value="vegetarian">
+                <label class="form-check-label" for="inlineRadio2">Veggivore</label>
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="RadioGluten" value="gluten-free">
+                <label class="form-check-label" for="inlineRadio3">anti-Gluten</label>
+            </div>
+        </form>
+  
+        <!-- Goggle Maps API -->
+        <img class="card-img-top" src="./assets/images/mtb banner 2048 x 832.jpg" alt="Riders banner">
+        <div class="card-body">
+            <p class="card-text">Where d'you wanna ride today?</p>
+        </div>
+        <form>
+            <label for="GoogleMapsInput">Let's get routed!</label>
+            <input type="text" class="form-control" id="Location" placeholder="Your location (City, intersection, landmark)">
+            <label for="HowFarInput">How many cliks you wanna cover?</label>
+            <input type="text" class="form-control" id="distance" placeholder="how many kilometers do you want?">
+        </form>
+
+        <button ID="survey-btn">Click me!</button>
+    </div>
+
+    <!-- SECTION TOO -- This below is hidden to start, revealed with the 'survey-btn' -->
+    <div class="card results-page" style="width: 25rem;">
+        <h2 class="card-title">Eat this</h2>
+        <img class="card-img-top" src='http://fakeimg.pl/800x550?text=will%20be%20a%20recipe&font=lobster' alt="Recpie">
+        <div class="card-body recipeResult">
+        <!-- need space for recipe results --> 
+        </div>
+
+        <!-- Map route results -->
+        <h2 class="card-title">Now ride that!</h2>
+        <img class='card-img-top' src='http://fakeimg.pl/800x550?text=will%20be%20a%20map&font=lobster' alt='Map'/>
+        <!-- / -->
+        <div class='card-body map-route'>
+        </div>
+        <!-- RESET to start of >age-app -->
+        <button class='reset-btn'>Yuck! I don't wanna eat this!</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./assets/JavaScript/javascript.js"></script>
+</body>
+
+</html>
+
+<div>
+
+</div>

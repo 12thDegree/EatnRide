@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+}
+
+.card {
+ margin: 0 auto;   
+}
+
+h2 {
+    margin: auto;
+}
+  
+.some-class {
+    float: left;
+    clear: none;
+  }
+  
+form {
+    margin: auto;
+  }
+
+.form-check, .form-control {
+    margin-bottom: 1em;
+    width: 22em;
+}
+
+  label {
+    clear: none;
+    display: block;
+    padding: 0 .25em 0 .25em;
+    margin-right: .5em;
+  }
+  /* keeps radio buttons in line, well spaced */
+  input[type=radio] {
+    float: left;
+    clear: none;
+    margin: 0px 0 0 5px !important;
+  }
+/* following is to show and hide DIV's for results and return to home */
+.results-page {
+  display: none;
+}
