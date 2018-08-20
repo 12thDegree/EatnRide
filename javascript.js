@@ -1,11 +1,11 @@
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyBBd76xlLDfpunNG3S1NcJLRWfAm1_ZS5c",
-  authDomain: "eatnride-dabda.firebaseapp.com",
-  databaseURL: "https://eatnride-dabda.firebaseio.com",
+  apiKey: "",
+  authDomain: "www.com",
+  databaseURL: "https://www.com",
   projectId: "eatnride-dabda",
   storageBucket: "eatnride-dabda.appspot.com",
-  messagingSenderId: "958794233543"
+  messagingSenderId: "",
 };
 firebase.initializeApp(config);
 
