@@ -3,10 +3,7 @@
 // <input id="length" type="textbox" value="10" size="2" onchange="getLength()" style="background-color:#addfff;"> 
 
 
-// EDAMAM
-// Application ID : dfbb09f0
-// This is the application ID, you should send with each API request.
-// Application Keys : 91d74ea2e7a999ec6be397ee4bc017ac	—
+// 	—
 
 // Health labels: “vegan”, “vegetarian”, “paleo”, “dairy-free”, “gluten-free”, “wheat-free”, “fat-free”, “low-sugar”, “egg-free”, “peanut-free”, “tree-nut-free”, “soy-free”, “fish-free”, “shellfish-free” (labels are per serving)
 // var healthLabels = selectHealth
@@ -22,7 +19,7 @@ $(document).ready(function () {
         let radioSelect = $("input[name='inlineRadioOptions']:checked").val();
 
         $.ajax({
-            url: `https://api.edamam.com/search?q=${query}&healthLabels=${radioSelect}&appid=91d74ea2e7a999ec6be397ee4bc017ac`,
+            url: `https://api.edamam.com/search?q=${query}&healthLabels=${radioSelect}&appid=`,
             type: 'GET',
             data: {
                 format: 'json'
@@ -37,9 +34,7 @@ $(document).ready(function () {
     });
 });
 
-//Google Maps
-// API key: AIzaSyA7RRGELPMjrN2TfvvR1MO05lGJXXzMHck
-
+//
 //This is a quick AJAX attempt, the other stuff below I think is the way i have to go. 
 $(document).ready(function () {
     $('#survey-btn').click(function () {
@@ -49,7 +44,7 @@ $(document).ready(function () {
 
         $.ajax({
             //need real url with real parameters. 
-            url: 'https://maps.googleapis.com/maps/api/directions/json?origin=${location}&destination=${location}&avoid=highway&mode=bicycling&key=AIzaSyA7RRGELPMjrN2TfvvR1MO05lGJXXzMHck',
+            url: 'https://maps.googleapis.com/maps/api/directions/json?origin=${location}&destination=${location}&avoid=highway&mode=bicycling',
             type: 'GET',
             success: function (response) {
                 //jquery div, show map
